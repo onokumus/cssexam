@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Term of Service</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <style media="screen">
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        body {
+            background: #eee;
+            color: #777;
+        }
+
+        a {
+          color: #069;
+          text-decoration: none;
+        }
+
+        .wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            min-width: 480px;
+            width: 90%;
+            max-width: 540px;
+            padding: 15px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            border: 1px solid #ccc;
+            border-bottom-width: 0;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .termofservice {
+            max-height: 320px;
+            overflow-y: auto;
+        }
+
+        .accept {
+            padding: 15px 0;
+        }
+
+        [name="accept"]:not(:checked) ~ .register-btn {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+        nav {
+          background: #fafafa;
+          border: 1px solid #ccc;
+          padding: 15px;
+          position: absolute;
+          width: 150px;
+          left: 5px;
+          top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">CSS Examples</a>
+  </nav>
+    <div class="wrapper">
+        <h3>Term of Service</h3>
+        <div class="termofservice">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="accept">
+            <input id="accept" type="checkbox" name="accept">
+            <label for="accept">I agree.</label>
+            <br><br>
+            <button class="register-btn" type="button" name="button">Register</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
