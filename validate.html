@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CSS Validate</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <style media="screen">
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        body {
+            background: #eee;
+            color: #777;
+        }
+
+        a {
+            color: #069;
+            text-decoration: none;
+        }
+
+        .wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            max-width: 540px;
+            padding: 15px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            border: 1px solid #ccc;
+            border-bottom-width: 0;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+            overflow-y: auto;
+
+        }
+
+        nav {
+            background: #fafafa;
+            border: 1px solid #ccc;
+            padding: 15px;
+            position: absolute;
+            width: 150px;
+            left: 5px;
+            top: 5px;
+            z-index: 1;
+        }
+
+        .validate-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .validate-form label {
+            margin-bottom: 15px;
+        }
+
+        .validate-form label input {
+            width: 100%;
+        }
+        .validate-form input {
+            border: 1px solid #f1f1f1;
+            padding: 10px 15px;
+            box-shadow: none;
+            border-radius: 2px;
+        }
+        .validate-form input:focus {
+            border-color: #8FC1E6;
+        }
+        .validate-form input:invalid {
+            border: 1px solid #f36995;
+        }
+
+        .validate-form .error {
+            color: #f36995;
+            display: none;
+        }
+
+        .validate-form input:invalid~.error {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">CSS Examples</a>
+    </nav>
+    <div class="wrapper">
+        <h3>Form Validate</h3>
+        <form class="validate-form" action="index.html" method="post">
+
+            <label> Username :
+              <input type="text" name="username" pattern="[a-z]{6,}" title="6 lowercase letters minimum" placeholder=username required>
+              <p class="error">6 lowercase letters minimum</p>
+          </label>
+
+
+            <label> E-mail :
+            <input type="email" name="email" placeholder=email>
+            <p class="error">Please enter a valid email address.</p>
+          </label>
+
+            <label> Age :
+          <input type="number" name="age" placeholder=age min=18 max=40>
+          <p class="error">Please enter a valid age between 18 and 40.</p>
+        </label>
+
+            <label> Part number :
+ <input pattern="[0-9][A-Z]{3}" name="part" title="A part number is a digit followed by three uppercase letters."/>
+
+ <p class="error">A part number is a digit followed by three uppercase letters.</p>
+</label>
+
+            <div class="">
+                <button type="submit" name="button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
