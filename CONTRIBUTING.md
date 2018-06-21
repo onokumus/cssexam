@@ -1,0 +1,1 @@
+geliştirme açıklamaları
